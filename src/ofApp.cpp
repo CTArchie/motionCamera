@@ -74,7 +74,7 @@ void ofApp::draw(){
                 for(int j = 0; j < tracker.instances.size(); j++){
                     ofImage face;
                     face.cropFrom(movement, tracker.instances[j].getBoundingBox().x, tracker.instances[j].getBoundingBox().y, tracker.instances[j].getBoundingBox().width, tracker.instances[j].getBoundingBox().height);
-                    face.save("faces-"+ date +"/face-" + ofToString(imgcountF) + ".jpg");
+                    face.save("faces-"+ date +"/face-" + ofToString(imgcountF) + ".png");
                     imgcountF++;
                 }
                
